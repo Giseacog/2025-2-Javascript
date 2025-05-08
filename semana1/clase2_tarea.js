@@ -7,7 +7,7 @@
 // - Si la temperatura está entre 20 y 30 grados, mostrar "Hace calor"
 // - Si la temperatura es mayor a 30 grados, mostrar "Hace mucho calor"
 
-const { ask } = require('../helpers/input');
+const { ask } = require("../helpers/input");
 
 async function main() {
   const temperatura = Number(await ask("¿Cuál es la temperatura actual?"));
@@ -16,9 +16,17 @@ async function main() {
     console.log("Hace frío");
   }
   // TODO: Implementar la lógica para temperaturas entre 10 y 20 grados
+  if (temperatura >= 10 && temperatura <= 20) {
+    console.log("Esta templado");
+  }
   // TODO: Implementar la lógica para temperaturas entre 20 y 30 grados
+  if (temperatura >= 20 && temperatura <= 30) {
+    console.log("Hace calor");
+  }
   // TODO: Implementar la lógica para temperaturas superiores a 30 grados
-
+   if (temperatura > 30) {
+    console.log("hace mucho calor");
+  }
 }
 
 main();

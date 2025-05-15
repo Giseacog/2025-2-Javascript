@@ -51,6 +51,6 @@ async function main() {
       console.log("En el cajón hay: ", frutas[j - 1]);
     }
   }
-}
+}1
 
 main();

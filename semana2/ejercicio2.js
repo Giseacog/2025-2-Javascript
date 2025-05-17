@@ -28,10 +28,11 @@ async function main() {
 
         if (index !== -1) {
           frutas.splice(index, 1);
-          console.log(`${frutaAEliminar} ha sido eliminado`);
+          console.log(`${frutaEliminar} ha sido eliminada `)
+        } else {
+          console.log('Fruta no encontrada ');
         }
-
-        console.log(`Frutas actuales ${frutas}`);
+        console.log('Frutas disponibles: ', frutas);
       }
     } else if (opcion === "3") {
       console.log("Gracias por usar el programa. Tus frutas fueron: ", frutas);
